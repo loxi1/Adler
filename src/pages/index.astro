@@ -2,6 +2,7 @@
 import Layout from '@layouts/Layout.astro'
 import Container from '@components/Container.astro'
 import Contactanos from '@components/Contactanos.astro'
+import MapaCorreo from '@components/MapaCorreo.astro'
 const { hostname } = new URL(Astro.request.url)
 ---
 
@@ -114,6 +115,7 @@ const { hostname } = new URL(Astro.request.url)
 			</div>
 		</section>
 
+		<MapaCorreo />
 
 	</main>
 </Layout>

@@ -41,6 +41,14 @@ const backBody = bgbody ? true : false
 		<link href="/fonts/archivo-semibold.woff2" rel="preload" type="font/woff2" as="font" fetchpriority="high" crossorigin />
 		<link href="/fonts/archivo-black.woff2" rel="preload" type="font/woff2" as="font" fetchpriority="high" crossorigin />		
 		<link href="/fonts/titulo-banner.woff2" rel="preload" type="font/woff2" as="font" fetchpriority="high" crossorigin />
+
+		<script type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+		</script>
+
+		<script type="text/javascript">
+		emailjs.init('lOYXDgoe5EkrsUXdZ')
+		</script>
 	</head>
 	<body class:list={['min-h-screen overflow-x-hidde',{'bg-principal': backBody}]}>
 		<Header />
