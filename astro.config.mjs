@@ -9,7 +9,14 @@ import prefetch from "@astrojs/prefetch";
 // https://astro.build/config
 import sitemap from "@astrojs/sitemap";
 
+const website = 'https://anibalcayetano.com/'
+
 // https://astro.build/config
 export default defineConfig({
-	integrations: [tailwind(), prefetch(), sitemap({ lasdmod: new Date()})]
+	site: website,
+	integrations: [
+		tailwind(), 
+		prefetch(), 
+		sitemap({ lasdmod: new Date()})
+	]
 });
