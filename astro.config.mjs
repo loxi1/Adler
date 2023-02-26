@@ -9,7 +9,7 @@ import prefetch from "@astrojs/prefetch";
 // https://astro.build/config
 import sitemap from "@astrojs/sitemap";
 
-const website = 'https://anibalcayetano.com/'
+const website = 'https://confeccionesadler.com/'
 
 // https://astro.build/config
 export default defineConfig({
