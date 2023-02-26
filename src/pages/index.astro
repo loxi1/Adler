@@ -5,7 +5,7 @@ import Contactanos from '@components/Contactanos.astro'
 import MapaCorreo from '@components/MapaCorreo.astro'
 const { hostname } = new URL(Astro.request.url)
 ---
-
+<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
 <Layout title='Adler Textil' bgbody='1'>
 	<main class="bg-principal">
 		<section
@@ -126,3 +126,15 @@ const { hostname } = new URL(Astro.request.url)
 		font-family: Led;
 	}
 </style>
+<script>
+document.querySelector(".modal").addEventListener("click", function (e) {    
+    con_ffeti(this)
+});
+
+function con_ffeti(tis)
+{
+    party.confetti(tis, {
+        count: party.variation.range(20, 100).skew(2, 1),
+    });
+}
+</script>
