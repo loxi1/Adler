@@ -49,8 +49,31 @@ ogimage = `${ogimage}images/opengraph.png`
 		<script type="text/javascript"
 		src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-947270274"></script>
+
 		<script type="text/javascript">
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'AW-947270274');
+
+			gtag('event', 'conversion', {'send_to': 'AW-947270274/2rLFCOvM1_kYEILl2MMD'});
+
 			emailjs.init('4Z1uuF9-3Cymg4roE')
+
+			function gtag_report_conversion(url) {
+			var callback = function () {
+				if (typeof(url) != 'undefined') {
+					window.location = url;
+				}
+			};
+			gtag('event', 'conversion', {
+				'send_to': 'AW-947270274/2rLFCOvM1_kYEILl2MMD',
+				'event_callback': callback
+			});
+			return false;
+		}
 		</script>
 	</head>
 	<body class:list={['min-h-screen overflow-x-hidde',{'bg-principal': backBody}]}>
